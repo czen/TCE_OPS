@@ -50,6 +50,6 @@ RUN mkdir ~/Src && \
       -D LLVM_INCLUDE_EXAMPLES=0 \
       -D LLVM_INCLUDE_TESTS=0 \
       -D CMAKE_INSTALL_PREFIX=~/Lib/llvm-3.3.install \      
-      ../llvm-3.3.src
+      ../llvm-3.3.src && \
     make  && \
     make install
