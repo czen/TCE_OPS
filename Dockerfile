@@ -7,6 +7,8 @@ RUN apt-get update && \
     apt-get clean && \
     apt-get -y autoremove
     
+RUN ./install_tzdata.sh
+    
 RUN apt-get -y install libwxgtk3.0-dev && \
     apt-get -y install libboost-all-dev && \
     apt-get -y install tcl8.6-dev && \ 
